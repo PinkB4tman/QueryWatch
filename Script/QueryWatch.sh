@@ -21,7 +21,7 @@ d=$(date '+%Y-%m-%d-Time:%H:%M:%S')
 FileName=$(echo "$d""__""$name")
 
 #	INIT
-if [ $1 = 'Init' ]; then
+if [ $1 == 'Init' ]; then
 	mkdir $path
 	mkdir $path/GraphqlChanges
 	touch $path/GraphqlChanges/LatestGraphQL.txt
