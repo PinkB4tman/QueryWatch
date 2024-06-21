@@ -23,7 +23,7 @@ fi
 #	Send Introspection
 curl 'https://hackerone.com/graphql' -H 'X-Csrf-Token: '$CSRF'' -H 'Cookie: __Host-session='$HostSession'' -H 'Content-Type: application/json' -d '{"query":"query IntrospectionQuery {\n  __schema {\n\n    queryType { name }\n    mutationType { name }\n    subscriptionType { name }\n    types {\n      kind\n      name\n               }\n   \n        \n      }\n    }","variables":{},"operationName":"IntrospectionQuery"}' -o $path/HackeroneGraphqlChanges/$FileName.txt.temp
 
-# Format it
+#	Format it
 sed s/,/\\n/g $path/HackeroneGraphqlChanges/$FileName.txt.temp > $path/HackeroneGraphqlChanges/$FileName.txt
 rm $path/HackeroneGraphqlChanges/$FileName.txt.temp
 
@@ -42,7 +42,7 @@ then
 else
 	echo "$d"" : Changes detected in Hackerone GraphQL" >> $path/logs.txt
 	echo $change >> $path/changesAT-$d.txt
-	## Send mail (to add)
+	
 
 	#	Set current introspection to latest
 	cp $path/HackeroneGraphqlChanges/$FileName.txt $path/HackeroneGraphqlChanges/LatestH1GraphQL.txt
