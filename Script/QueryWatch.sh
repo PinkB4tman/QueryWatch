@@ -48,7 +48,7 @@ then
 else
 	echo "$d"" : Changes detected in "$name" GraphQL" >> $path/logs.txt
 	echo $change >> $path/changesAT-$d.txt
-	## Send mail (to add)
+	##	Send mail (to add)
 
 	#	Set current introspection to latest
 	cp $path/GraphqlChanges/$FileName.txt $path/GraphqlChanges/LatestGraphQL.txt
