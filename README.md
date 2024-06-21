@@ -1,2 +1,5 @@
 # QueryWatch
-A tool to detect changes in a GraphQL api where introspection is enabled.
+A repository to detect changes in a GraphQL api's where introspection is enabled.
+
+Curent GraphQL api endpoints
+- hackerone.com/graphql
