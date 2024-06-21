@@ -2,18 +2,21 @@
 
 
 
-##	Change this
+#	Vars
+
+###	If you dont need a session to query your api no need to touch these:
 SessionCookie="SessionCookieValue"
 SessionCookieName="SessionCookieName"
 
 CSRF="YouCSRFToken"
 CSRFHeaderName="CSRFHeaderName"
 
+###	Where?
 name="name"
 path="/your/path/to/GraphQl"$name
-url="http://example.com/graphql"
+url="https://example.com/graphql"
 
-#	Set Vars
+###	Date and how the filename syntax
 d=$(date '+%Y-%m-%d-Time:%H:%M:%S')
 FileName=$(echo "$d""__""$name")
 
