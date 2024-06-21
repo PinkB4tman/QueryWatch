@@ -1,5 +1,8 @@
 # QueryWatch
-A repository containing scripts to detect changes in a GraphQL api's where introspection is enabled.
+Simple script to detect changes in a GraphQL api where introspection is enabled.
 
-Curent GraphQL api endpoints
-- hackerone.com/graphql
+# Usage
+Make it run every hour and get notify when a change is made to the GraphQL api you're watching.
+
+## First time running it :
+./QueryWatch.sh Init
