@@ -38,7 +38,7 @@ rm $path/GraphqlChanges/$FileName.txt.temp
 
 #	Check changes
 change=$(grep -xvFf $path/GraphqlChanges/$FileName.txt $path/GraphqlChanges/LatestGraphQL.txt; grep -xvFf $path/GraphqlChanges/LatestGraphQL.txt $path/GraphqlChanges/$FileName.txt)
-echo "This as been added or removed : ""$change"
+
 
 
 
